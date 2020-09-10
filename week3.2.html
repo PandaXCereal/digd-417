@@ -26,7 +26,7 @@ the top margin of this dropdown to not be so large on mobile."
     To FIX, this add a rule in the supplied media query. 
 
 -->
-    <title>Introducing: Title</title>
+    <title>Introducing:Who Knows?</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -38,24 +38,36 @@ the top margin of this dropdown to not be so large on mobile."
             
             nav ul.show {
                 background: #f8f9fa;
-                margin-top: 23px;
+                margin-top: 22px;
                 border-top: none;
-                border-top-left-radius: none;
-                border-top-right-radius: none;
+                border-top-left-radius:unset;
+                border-top-right-radius:unset;
             }
             
             main {
-                margin-top: 87px;
+                margin-top: 32px;
             }
             /* fix the mobile view */
             
             @media (max-width:767px) {
-                nav ul.show {}
+                nav ul.show {
+                    width: 95%;
+                    margin-left:auto;
+                    margin-right:auto;
+                    margin-top: 24px;
+                }
             }
             /* a fix the inbetween view */
             
-            @media (min-width:XXXpx) and (max-width:XXXpx) {
-                nav ul.show {}
+            @media (min-width:200px) and (max-width:600px) {
+                nav ul.show {
+                    width:90%;
+                    margin: auto;
+                    margin-top: 2px;
+                    border-style: none;
+
+
+                }
             }
         </style>
     </head>
